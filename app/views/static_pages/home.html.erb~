@@ -1,0 +1,37 @@
+<%= provide(:title, "XOtoZ") %>
+<div class="intro-header">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="intro-message">
+
+<h2>Farmers' & Pirates'</h2>
+<h5>[Detroit]</h5>
+<p>"A swimmmingly good listing of things."
+</p>
+
+<table class="center" cellpadding="10">
+    <tr align="center">
+		<th>thing</th>
+        <th>$$$$</th>
+		<th>maker</th>
+	
+	</tr>
+	
+  <% @things.each do |thing| %>
+   <tr align="center">
+	  <td><p><%= link_to thing.title, thing_path(thing) %></p> </td>
+	  <td><p><%= number_to_currency(thing.price, :unit => "$") %></p> </td>
+	  <td><p><%= link_to thing.creator.name, user_path(thing.creator) %></p> </td>
+	 
+   </tr>
+  <% end %>
+</table>
+           
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
