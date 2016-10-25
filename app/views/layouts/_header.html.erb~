@@ -10,69 +10,20 @@
       </button>
       <%= link_to root_url, id: 'logo', class:'navbar-brand topnav custom-hover' do %>
           
-         The F & P { <%= Thing.count %> } <small> beta 1.1 </small>
+         
+      detroit youth and dog rescue 
 		 
       <% end %>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navigation_menu">
       <ul class="nav navbar-nav navbar-right">
-	  
-		
-
-        <% if logged_in? %>
-            <li class="custom-hover">
-              <%= link_to new_thing_path do %>
-                  Make-a-Thing
-              <% end %>
-            </li>
-
-        <% end %>
-
+	         
         <li class="custom-hover">
           <%= link_to about_path do %>
               About
           <% end %>
         </li>
 
-        <% if !logged_in? %>
-            <li>
-              <%= link_to login_path do %>
-                  Log In
-              <% end %>
-            </li>
+        </ul>
 
-        <% else %>
-
-            <li class="dropdown custom-hover">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                menu:{<%= current_user.name %>}</b>
-              </a>
-              <ul class="dropdown-menu" style="width: 230px;border-radius:10px;">
-                <li style="padding-left:10px;">Hello, <%= current_user.name %>!</li>
-                <li class="divider"></li>
-                <li><%= link_to current_user do %>
-                      Your Things 
-                  <% end %>
-                </li>
-                <li><%= link_to edit_user_path(current_user) do %>
-                     Your Profile
-                  <% end %>
-                  <li class="divider"></li>
-                  <li>
-                    <%= link_to logout_path, method: "delete" do %>
-                      Log Out
-                    <% end %>
-                  </li>
-                  </ul>
-            </li>
-
-        <% end %>
-
-
-      </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-  </div>
-  <!-- /.container -->
-</nav>
