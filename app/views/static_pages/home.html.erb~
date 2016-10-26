@@ -1,9 +1,14 @@
 <%= provide(:title, "detroit youth and dog rescue") %>
 
 <h20>detroit youth and dog rescue</h20>
+<hr>
+<a align="center" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N2LNUVMVKFW4C">DONATE</a>
+<a align="center" href="mailto:detroityouthanddogrescue@gmail.com">EMAIL</a>
+<a href="tel:13134002582">CALL</a>
+<hr>
 <%= image_tag("dydr_logo.jpg") %>
 <hr>
-<a align="center" href="https://www.facebook.com/Detroityouthanddogrescue/">DONATE</a>
+<a align="center" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N2LNUVMVKFW4C">DONATE</a>
 <a align="center" href="mailto:detroityouthanddogrescue@gmail.com">EMAIL</a>
 <a href="tel:13134002582">CALL</a>
 <hr>
